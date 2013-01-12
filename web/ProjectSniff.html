@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Sniff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <h1><span class="logo"></span>Project Sniff</h1>
+        <h4>Know your network.</h4>
+      </div>
+
+      <hr>
+      <div class="span12" id="current-stats"></div>
+      <div class="jumbotron" id="current-stats-chart"></div>
+      <hr>
+      <div class="row-fluid marketing">
+        <div class="span12" id="top-sites">
+        </div>
+      <hr>
+      <div class="span12" id="world-map">
+        <h3>World Map</h3>
+        <div id="google-map"></div>
+      </div>
+      <div class"span12" id="facebook"></div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>Steve Hollaar - David Hastings - Siddarth Prakash - Manu Zope</p>
+      </div>
+
+    </div> <!-- /container -->
+  <script src='libs/jquery-1.8.3.js' type="text/javascript"></script>
+  <script src='libs/bootstrap.js' type="text/javascript"></script>
+  <script src='libs/underscore.js' type="text/javascript"></script>
+  <script src='libs/backbone.js' type="text/javascript"></script>
+  <script src='libs/highcharts.js' type="text/javascript"></script>
+  <script src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBAldlREwK3iPnskWoXAtM4x2_CdXXmz78&sensor=false' type="text/javascript"></script>
+  <script src='main.js' type="text/javascript"></script>
+
+  <!-- Templates -->
+  <script type="text/template" id="stats-template">
+    <h5><span class="users"><%= usersConnected %></span> active user<%= usersConnected !== 1 ? 's' : '' %> on the network connecting to <span class="sites"><%= domainsConnected %></span> website<%= domainsConnected !== 1 ? 's' : '' %></h5>
+  </script>
+
+  <script type="text/template" id="stats-facebook-template">
+    <h3>Facebook Stats</h3>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Facebook Requests</th>
+          <th>Other Requests</th>
+          <th>% Facebook</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% stats.forEach(function(stat){ %>
+          <tr>
+            <td><%= stat.src %></td>
+            <td><%= stat.facebookHits %></td>
+            <td><%= stat.nonFacebookHits %></td>
+            <td><%= (stat.percentOverall*100).toFixed(2) + '%' %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </script>
+
+  <script type="text/template" id="top-sites-template">
+    <h3>Top Sites</h3>
+    <div class="btn-group" data-toggle="buttons-radio">
+      <button type="button" data-delta="current" class="btn btn-inverse<%= delta==='current' ? ' active' : '' %>">Current</button>
+      <button type="button" data-delta="1min" class="btn btn-inverse<%= delta==='1min' ? ' active' : '' %>">1 Minute</button>
+      <button type="button" data-delta="1hr" class="btn btn-inverse<%= delta==='1hr' ? ' active' : '' %>">1 Hour</button>
+      <button type="button" data-delta="1day" class="btn btn-inverse<%= delta==='1day' ? ' active' : '' %>">1 Day</button>
+      <button type="button" data-delta="all" class="btn btn-inverse<%= delta==='all' ? ' active' : '' %>">All Time</button>
+    </div>
+
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Website</th>
+          <th># Requests</th>
+          <th>Bytes Transferred</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% sites.forEach(function(site){ %>
+          <tr>
+            <td><%= site.destination %></td>
+            <td><%= site.packet_count %></td>
+            <td><%= site.size %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </script>
+
+  </body>
+</html>

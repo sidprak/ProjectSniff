@@ -1,0 +1,77 @@
+@import url("libs/bootstrap.css");
+@import url("libs/bootstrap-responsive.css");
+
+body {
+	color: white;
+	background: url('assets/bg.png') center repeat;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+#current-stats h5 {
+	font-size: 16px;
+}
+
+#current-stats .users{
+	color: #dddf0d;
+}
+#current-stats .sites{
+	color: #7798bf;
+}
+
+#top-sites h3{
+	display: inline-block;
+}
+
+#top-sites .btn-group {
+	line-height: 40px;
+	margin-left: 10px;
+}
+
+#world-map{
+	margin-left: 0;
+}
+
+#google-map {
+	height: 500px;
+	margin-bottom: 15px;
+}
+
+#facebook {
+	margin-top: 30px;
+}
+
+/* Custom container */
+.container-narrow {
+	margin: 0 auto;
+	max-width: 700px;
+}
+.container-narrow > hr {
+	margin: 15px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+	margin: 20px 0;
+	text-align: center;
+}
+.jumbotron h1 {
+	font-size: 72px;
+	line-height: 1;
+}
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+	margin: 30px 0;
+}
+.marketing p + h4 {
+	margin-top: 28px;
+}
+
+.footer p {
+	text-align: center;
+}

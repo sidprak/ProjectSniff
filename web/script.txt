@@ -1,0 +1,7 @@
+Steve - Intro
+	*Names* we're showing off project sniff.
+	At its' core, this is a local network packet sniffer. We're envisioning this as a simple but interesting tool for regular users to get some insights into what their local networks are being used for.
+
+David - Packet sniffing, real data from , supplemented with some mock users
+Siddarth - 
+Steve 
