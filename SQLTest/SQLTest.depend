@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1358020154 source:c:\users\david\desktop\sqltest\main.cpp
+	<iostream>
+	<stdio.h>
+	<winsock.h>
+	<mysql.h>
+
+1249669872 c:\program files\mysql\mysql connector c 6.0.2\include\mysql.h
+	<standards.h>
+	<sys/types.h>
+	<winsock2.h>
+	"mysql_version.h"
+	"mysql_com.h"
+	"mysql_time.h"
+	"my_list.h"
+	"typelib.h"
+	"my_alloc.h"
+
+1249685248 c:\program files\mysql\mysql connector c 6.0.2\include\mysql_version.h
+	<custom_conf.h>
+
+1249669872 c:\program files\mysql\mysql connector c 6.0.2\include\mysql_com.h
+
+1249669872 c:\program files\mysql\mysql connector c 6.0.2\include\mysql_time.h
+
+1249669872 c:\program files\mysql\mysql connector c 6.0.2\include\my_list.h
+
+1249669872 c:\program files\mysql\mysql connector c 6.0.2\include\typelib.h
+	"my_alloc.h"
+
+1249669872 c:\program files\mysql\mysql connector c 6.0.2\include\my_alloc.h
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\mysql.h
+	<standards.h>
+	<sys/types.h>
+	<winsock2.h>
+	"mysql_version.h"
+	"mysql_com.h"
+	"mysql_time.h"
+	"my_list.h"
+	"typelib.h"
+	"my_alloc.h"
+
+1249685244 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\mysql_version.h
+	<custom_conf.h>
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\mysql_com.h
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\mysql_time.h
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\my_list.h
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\typelib.h
+	"my_alloc.h"
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\my_alloc.h
+

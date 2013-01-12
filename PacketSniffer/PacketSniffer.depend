@@ -1,0 +1,70 @@
+# depslib dependency file v1.0
+1357960612 source:c:\users\david\desktop\packetsniffer\main.cpp
+	<iostream>
+	<winsock.h>
+	<mysql.h>
+	<string>
+	<stdio.h>
+	<sstream>
+	"pcap.h"
+
+1357871579 c:\users\david\desktop\packetsniffer\include\pcap.h
+	<pcap/pcap.h>
+
+1357871579 c:\users\david\desktop\packetsniffer\include\pcap\pcap.h
+	<pcap-stdinc.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/types.h>
+	<sys/time.h>
+	<pcap/bpf.h>
+	<stdio.h>
+	<Win32-Extensions.h>
+	<remote-ext.h>
+
+1357871579 c:\users\david\desktop\packetsniffer\include\pcap-stdinc.h
+	<winsock2.h>
+	<fcntl.h>
+	"bittypes.h"
+	<time.h>
+	<io.h>
+	"IP6_misc.h"
+	<stdint.h>
+
+1357871579 c:\users\david\desktop\packetsniffer\include\bittypes.h
+
+1357871579 c:\users\david\desktop\packetsniffer\include\ip6_misc.h
+	<winsock2.h>
+	<ws2tcpip.h>
+
+1357871579 c:\users\david\desktop\packetsniffer\include\pcap\bpf.h
+
+1357871579 c:\users\david\desktop\packetsniffer\include\win32-extensions.h
+
+1357871579 c:\users\david\desktop\packetsniffer\include\remote-ext.h
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\mysql.h
+	<standards.h>
+	<sys/types.h>
+	<winsock2.h>
+	"mysql_version.h"
+	"mysql_com.h"
+	"mysql_time.h"
+	"my_list.h"
+	"typelib.h"
+	"my_alloc.h"
+
+1249685244 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\mysql_version.h
+	<custom_conf.h>
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\mysql_com.h
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\mysql_time.h
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\my_list.h
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\typelib.h
+	"my_alloc.h"
+
+1249669872 c:\program files (x86)\mysql\mysql connector c 6.0.2\include\my_alloc.h
+
