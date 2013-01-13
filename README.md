@@ -1,7 +1,7 @@
 ProjectSniff
 ============
 
-This was our hack for the uWaterloo Facebook Hackathon 2013.
+This was our hack for the uWaterloo Facebook Hackathon 2013.  We were the first honorable mention for best "smelling" hack.
 
 Contributors:
 - Siddarth Prakash
