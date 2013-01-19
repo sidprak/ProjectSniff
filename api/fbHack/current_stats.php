@@ -43,7 +43,7 @@
         return $out;
     }
 
-	##########
+    ##########
     # MAIN
     ##########
 
@@ -62,5 +62,5 @@
     # OUTPUT
     ##########
 
-  	print json_encode($json_out);
+    print json_encode($json_out);
 ?>
